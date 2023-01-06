@@ -1,0 +1,207 @@
+#page-logo {
+    margin: 2em;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+body {
+    background-color: #ebf6f0;
+}
+
+.container {
+    margin: -1em 12em 5em 5em;
+    /*position: absolute;*/
+    width: 95%;
+    height: 60%;
+}
+
+.div-write-text {
+    float: left;
+    width: 50%;
+    margin-left: 5em;
+    height: auto;
+}
+
+#text {
+    color: #0A3871;
+    background-color: #ebf6f0;
+    border: 0;
+    font-size: 1.2em;
+    width: 90%;
+    height: auto;
+    resize: none;
+}
+
+#info {
+    margin-top: 1em;
+}
+
+#info-img {
+    width: 1em;
+}
+
+#btn-encrypt {
+    color: #FFFFFFFF;
+    background-color: #0063ba;
+    border-radius: 20px;
+    width: 40%;
+    padding: 1em;
+    border: none;
+}
+
+#btn-encrypt:hover {
+    cursor: pointer;
+    background-color: #3a3fc6;
+    font-size: 0.9em;
+    transition: font-size 0.1s;
+}
+
+#btn-decrypt {
+    color: #0A3871;
+    background-color: #cdd6d0;
+    border-radius: 20px;
+    width: 40%;
+    padding: 1em;
+    margin-left: 1em;
+    border: 1px solid #000000;
+}
+
+#btn-decrypt:hover {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #adabab;
+    font-size: 0.9em;
+    transition: font-size 0.1s;
+}
+
+::-webkit-input-placeholder {
+    color: #0A3871;
+}
+
+::-moz-placeholder {
+    color: #0A3871;
+}
+
+.div-show-text {
+    float: left;
+    border-radius: 20px;
+    background-color: #FFFFFFFF;
+    width: 25%;
+    box-shadow: -4px 10px 20px -5px #b8beb9;
+    margin: 0 0 2em -2em;
+}
+
+#notfound-img {
+    width: 60%;
+    padding-top: 5em;
+    padding-left: 2em;
+}
+
+.notfound-text {
+    text-align: center;
+    margin-bottom: 50%;
+}
+
+strong {
+    font-size: 1.5em;
+}
+
+#copy {
+    visibility: hidden;
+    color: #0A3871;
+    background-color: #FFFFFFFF;
+    border-radius: 20px;
+    width: 40%;
+    padding: 1em;
+    margin-left: 1em;
+    border: 1px solid #000000;
+}
+
+footer {
+    margin-top: 10em;
+    background-image: url('img/bg.jpg');
+    text-align: center;
+    display: inline;
+}
+
+
+/*h1#logos-footer {
+    display: inline-flex;
+}*/
+
+#logo-footer {
+    width: 30%;
+    padding: 5em 0 3em 0;
+}
+
+.text-footer {
+    color: #FFFFFFFF;
+    position: relative;
+    bottom: 1em;
+}
+
+@media screen and (max-width:550px) {
+    html,
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    #page-logo {
+        margin: 1em 0 0 -2em;
+    }
+    .container {
+        position: static;
+    }
+    .div-write-text {
+        width: 100%;
+        margin-top: 1em;
+        margin-left: -4em;
+    }
+    #text {
+        height: 15em;
+        width: 100%;
+        margin-top: 3em;
+    }
+    img,
+    p,
+    button {
+        margin: 0;
+        padding: 0;
+    }
+    #btn-encrypt,
+    #btn-decrypt {
+        width: 100%;
+        display: inline-block;
+        margin-top: 1em;
+        margin-left: 0;
+    }
+    .div-show-text {
+        position: relative;
+        width: 95%;
+        display: inline-block;
+        margin: 4em 1em 1em -4em;
+        height: 150px;
+    }
+    #notfound-img {
+        visibility: hidden;
+    }
+    .notfound-text {
+        position: absolute;
+        display: block;
+        margin: 0 0 1em 0;
+        top: 20px;
+        padding-left: 1.5em;
+        padding-right: 1em;
+    }
+    #copy {
+        display: inline-block;
+        width: 80%;
+        margin: 0 0 1em 2.5em;
+    }
+}
