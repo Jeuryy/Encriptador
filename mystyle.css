@@ -96,6 +96,7 @@ body {
     width: 25%;
     box-shadow: -4px 10px 20px -5px #b8beb9;
     margin: 0 0 2em -2em;
+    text-align: center;
 }
 
 #notfound-img {
@@ -104,7 +105,7 @@ body {
     padding-left: 2em;
 }
 
-.notfound-text {
+#notfound-text {
     text-align: center;
     margin-bottom: 50%;
 }
@@ -114,14 +115,21 @@ strong {
 }
 
 #copy {
-    visibility: hidden;
     color: #0A3871;
     background-color: #FFFFFFFF;
     border-radius: 20px;
-    width: 40%;
+    width: 80%;
     padding: 1em;
-    margin-left: 1em;
+    margin: 0 0 1.5em 0;
     border: 1px solid #000000;
+}
+
+#copy:hover {
+    cursor: pointer;
+    color: #000000;
+    background-color: #f5f3f3;
+    font-size: 0.9em;
+    transition: font-size 0.1s;
 }
 
 footer {
@@ -147,7 +155,7 @@ footer {
     bottom: 1em;
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:650px) {
     html,
     body {
         display: flex;
@@ -187,22 +195,16 @@ footer {
         width: 95%;
         display: inline-block;
         margin: 4em 1em 1em -4em;
-        height: 150px;
+        height: auto;
     }
     #notfound-img {
         visibility: hidden;
     }
-    .notfound-text {
-        position: absolute;
-        display: block;
-        margin: 0 0 1em 0;
-        top: 20px;
-        padding-left: 1.5em;
-        padding-right: 1em;
+    #notfound-text {
+        margin: -15em 0 1.5em 0;
     }
     #copy {
-        display: inline-block;
         width: 80%;
-        margin: 0 0 1em 2.5em;
+        margin: 0 0 1em 2.em;
     }
 }

@@ -21,7 +21,7 @@
                 <p id="info">
                     <img id="info-img" src="img/info.png" alt="Icono de informacion"> Solo letras minúsculas y sin acentos.
                 </p>
-                <button type="button" id="btn-encrypt">Encriptar</button>
+                <button type="button" id="btn-encrypt" onclick="encrypt()">Encriptar</button>
                 <button type="button" id="btn-decrypt">Desencriptar</button>
 
             </div>
@@ -30,7 +30,7 @@
 
                 <img src="img/notfound.png" alt="No text found to encript" id="notfound-img">
 
-                <p class="notfound-text"><strong>Ningún mensaje fue encontrado.</strong><br><br> Ingresa el texto que desees encriptar o desencriptar</p>
+                <p id="notfound-text"><strong>Ningún mensaje fue encontrado.</strong><br><br> Ingresa el texto que desees encriptar o desencriptar</p>
 
                 <button id="copy">Copiar</button>
                 <!--<div id="result-text">
@@ -56,5 +56,7 @@
     </div>
 
 </footer>
+
+<script src="main.js"></script>
 
 </html>
