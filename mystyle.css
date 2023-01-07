@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     max-width: 100% !important;
     overflow-x: hidden !important;
+    font-family: 'Work Sans', sans-serif;
 }
 
 body {
@@ -83,6 +84,7 @@ body {
 
 ::-webkit-input-placeholder {
     color: #0A3871;
+    font-family: 'Work Sans', sans-serif;
 }
 
 ::-moz-placeholder {
@@ -102,7 +104,7 @@ body {
     border: none;
     font-size: 0.9em;
     transition: font-size 0.1s;
-    background-color: #ebf6f0;
+    background-color: #e5ede9;
 }
 
 .div-show-text {

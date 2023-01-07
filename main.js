@@ -28,8 +28,10 @@
     }
 
     function clearText() {
-        textToEncrypt = "";
-
+        showText.innerHTML = "<p><strong>Ningún mensaje fue encontrado.</strong><br><br> Ingresa el texto que desees encriptar o desencriptar</p>";
+        notFoundImg.style.display = "initial";
+        copyBtn.style.display = "none";
+        clearBtn.style.display = "none";
     }
 
 
