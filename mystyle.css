@@ -13,7 +13,7 @@ body {
 }
 
 body {
-    background-color: #ebf6f0;
+    background: radial-gradient(circle at left top, #898c90, #000000);
     margin: 0;
 }
 
@@ -32,13 +32,16 @@ body {
 }
 
 #text {
-    color: #0A3871;
-    background-color: #ebf6f0;
+    box-shadow: 0.1em 0.1em 0.5em 0.1em #4e0000;
+    color: #4e0000;
+    background: radial-gradient(circle at center, #898c90, #b1aaaa);
+    border-radius: 1em;
     border: 0;
     font-size: 1.2em;
     width: 90%;
     height: auto;
     resize: none;
+    padding-left: 2em;
 }
 
 #info {
@@ -50,8 +53,10 @@ body {
 }
 
 #btn-encrypt {
+    font-weight: bold;
+    box-shadow: 0.1em 0.1em 1em 0.1em #4e0000;
     color: #FFFFFFFF;
-    background-color: #0063ba;
+    background-color: #4e0000;
     border-radius: 20px;
     width: 40%;
     padding: 1em;
@@ -60,36 +65,39 @@ body {
 
 #btn-encrypt:hover {
     cursor: pointer;
-    background-color: #3a3fc6;
+    background-color: #4e0000;
     font-size: 0.9em;
     transition: font-size 0.1s;
 }
 
 #btn-decrypt {
-    color: #0A3871;
+    box-shadow: 0.1em 0.1em 1em 0.1em #000000;
+    color: #000000;
     background-color: #cdd6d0;
     border-radius: 20px;
     width: 40%;
     padding: 1em;
     margin-left: 1em;
     border: 1px solid #000000;
+    font-weight: bold;
 }
 
 #btn-decrypt:hover {
     cursor: pointer;
-    color: #FFFFFF;
-    background-color: #adabab;
+    color: #000000;
+    background-color: #cdd6d0;
     font-size: 0.9em;
     transition: font-size 0.1s;
 }
 
 ::-webkit-input-placeholder {
-    color: #0A3871;
+    color: #000000;
     font-family: 'Work Sans', sans-serif;
+    padding-left: 0.5em;
 }
 
 ::-moz-placeholder {
-    color: #0A3871;
+    color: #4e0000;
 }
 
 #clear-content {
@@ -97,7 +105,7 @@ body {
     height: 2em;
     vertical-align: top;
     border: none;
-    background-color: #ebf6f0;
+    background-color: #898c90;
 }
 
 #clear-content:hover {
@@ -105,7 +113,7 @@ body {
     border: none;
     font-size: 0.9em;
     transition: font-size 0.1s;
-    background-color: #e5ede9;
+    background-color: #898c90;
 }
 
 .div-show-text {
@@ -114,8 +122,8 @@ body {
     height: 35em;
     padding: 0.5em 1em 0.5em 1em;
     border-radius: 20px;
-    background-color: #FFFFFFFF;
-    box-shadow: -4px 10px 20px -5px #b8beb9;
+    background: radial-gradient(circle at center, #898c90, #b1aaaa);
+    box-shadow: 0.1em 0.1em 1em 0.1em #4e0000;
     text-align: center;
     overflow-y: auto;
 }
@@ -124,6 +132,7 @@ body {
     width: 60%;
     padding-top: 5em;
     padding-left: 2em;
+    opacity: 0.4;
 }
 
 #notfound-text {
@@ -136,19 +145,20 @@ strong {
 }
 
 #copy {
-    color: #0A3871;
-    background-color: #FFFFFFFF;
+    color: #000000;
+    background-color: #cdd6d0;
     border-radius: 20px;
     padding: 1em;
     margin: 0 0 1.5em 0;
     border: 1px solid #000000;
     width: 80%;
+    box-shadow: 0.1em 0.1em 1em 0.1em #000000;
 }
 
 #copy:hover {
     cursor: pointer;
     color: #000000;
-    background-color: #f5f3f3;
+    background-color: #cdd6d0;
     font-size: 0.9em;
     transition: font-size 0.1s;
 }
