@@ -19,7 +19,7 @@
     }
 
     function hideElements() {
-        showText.innerHTML = "<p><strong>Ningún mensaje fue encontrado.</strong><br><br> Ingresa el texto que desees encriptar o desencriptar</p>";
+        showText.innerHTML = "<p><strong>No hay mensaje</strong><br><br> El mensaje encriptado/desencriptado aparecera aqui</p>";
         notFoundImg.style.display = "initial";
         copyBtn.style.display = "none";
         clearBtn.style.display = "none";
@@ -84,7 +84,7 @@
     function copyText() {
         navigator.clipboard.writeText(showText.innerHTML)
             .then(() => {
-                alert("Copied!");
+                alert("Texto copiado!");
             })
             .catch(err => {
                 alert("Error, err");
