@@ -3,9 +3,20 @@
     var copyBtn = document.getElementById("copy");
     var clearBtn = document.getElementById("clear-content");
     var notFoundImg = document.getElementById("notfound-img");
+    var encryptBtn = document.getElementById("btn-encrypt");
+    var decryptBtn = document.getElementById("btn-decrypt");
     var textToEncrypt;
-    var textToCopy;
+    var aux;
 
+
+
+    function guide() {
+        alert("La letra 'e' es convertida para 'enter'\n" +
+            "La letra 'i' es convertida para 'imes'\n" +
+            "La letra 'a' es convertida para 'aimes'\n" +
+            "La letra 'o' es convertida para 'ober'\n" +
+            "La letra 'u' es convertida para 'ufat'\n");
+    }
 
     function hideElements() {
         showText.innerHTML = "<p><strong>Ningún mensaje fue encontrado.</strong><br><br> Ingresa el texto que desees encriptar o desencriptar</p>";
@@ -25,7 +36,7 @@
 
     /*La letra "e" es convertida para "enter"
       La letra "i" es convertida para "imes"
-      La letra "a" es convertida para "ai"
+      La letra "a" es convertida para "aimes"
       La letra "o" es convertida para "ober"
       La letra "u" es convertida para "ufat"*/
     function encrypt() {
@@ -37,6 +48,9 @@
         textToEncrypt = textToEncrypt.replace(/o/igm, "ober");
         textToEncrypt = textToEncrypt.replace(/u/igm, "ufat");
         showText.innerHTML = textToEncrypt.toLowerCase();
+
+        //encryptBtn.onclick = aux = 0;
+
         //copyBtn.onclick = copyText(showText.innerHTML);
 
         if (textToEncrypt == "") {
@@ -55,6 +69,9 @@
         textToEncrypt = textToEncrypt.replace(/ober/igm, "o");
         textToEncrypt = textToEncrypt.replace(/ufat/igm, "u");
         showText.innerHTML = textToEncrypt.toLowerCase();
+
+        //decryptBtn.onclick = aux = 1;
+
         //copyBtn.onclick = copyText(showText.innerHTML);
 
         if (textToEncrypt == "") {
@@ -64,10 +81,10 @@
         }
     }
 
-    function copyText(text) {
-        navigator.clipboard.writeText(text)
+    function copyText() {
+        navigator.clipboard.writeText(showText.innerHTML)
             .then(() => {
-                alert("Copied");
+                alert("Copied!");
             })
             .catch(err => {
                 alert("Error, err");
