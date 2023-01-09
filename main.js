@@ -13,7 +13,7 @@
     function guide() {
         alert("La letra 'e' es convertida para 'enter'\n" +
             "La letra 'i' es convertida para 'imes'\n" +
-            "La letra 'a' es convertida para 'ai'\n" +
+            "La letra 'a' es convertida para 'aimes'\n" +
             "La letra 'o' es convertida para 'ober'\n" +
             "La letra 'u' es convertida para 'ufat'\n");
     }
@@ -36,7 +36,7 @@
 
     /*La letra "e" es convertida para "enter"
       La letra "i" es convertida para "imes"
-      La letra "a" es convertida para "ai"
+      La letra "a" es convertida para "aimes"
       La letra "o" es convertida para "ober"
       La letra "u" es convertida para "ufat"*/
     function encrypt() {
@@ -44,7 +44,7 @@
         textToEncrypt = removeAccents(textToEncrypt);
         textToEncrypt = textToEncrypt.replace(/e/g, "enter");
         textToEncrypt = textToEncrypt.replace(/i/g, "imes");
-        textToEncrypt = textToEncrypt.replace(/a/g, "ai");
+        textToEncrypt = textToEncrypt.replace(/a/g, "aimes");
         textToEncrypt = textToEncrypt.replace(/o/g, "ober");
         textToEncrypt = textToEncrypt.replace(/u/g, "ufat");
         showText.innerHTML = textToEncrypt.toLowerCase();
@@ -65,7 +65,7 @@
         textToEncrypt = removeAccents(textToEncrypt);
         textToEncrypt = textToEncrypt.replace(/enter/g, "e");
         textToEncrypt = textToEncrypt.replace(/imes/g, "i");
-        textToEncrypt = textToEncrypt.replace(/ai/g, "a");
+        textToEncrypt = textToEncrypt.replace(/aimes/g, "a");
         textToEncrypt = textToEncrypt.replace(/ober/g, "o");
         textToEncrypt = textToEncrypt.replace(/ufat/g, "u");
         showText.innerHTML = textToEncrypt.toLowerCase();
