@@ -201,7 +201,7 @@ footer {
     }
     #text {
         height: 15em;
-        width: 100%;
+        width: 90%;
         margin-top: 3em;
     }
     img,
@@ -226,7 +226,7 @@ footer {
         padding: 0.2em 0.2em 0 0;
     }
     .div-show-text {
-        width: 95%;
+        width: 90%;
         margin: 4em 1em 1em -4em;
         height: 15em;
     }
