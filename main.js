@@ -13,7 +13,7 @@
     function guide() {
         alert("La letra 'e' es convertida para 'enter'\n" +
             "La letra 'i' es convertida para 'imes'\n" +
-            "La letra 'a' es convertida para 'aimes'\n" +
+            "La letra 'a' es convertida para 'ai'\n" +
             "La letra 'o' es convertida para 'ober'\n" +
             "La letra 'u' es convertida para 'ufat'\n");
     }
@@ -36,17 +36,17 @@
 
     /*La letra "e" es convertida para "enter"
       La letra "i" es convertida para "imes"
-      La letra "a" es convertida para "aimes"
+      La letra "a" es convertida para "ai"
       La letra "o" es convertida para "ober"
       La letra "u" es convertida para "ufat"*/
     function encrypt() {
         textToEncrypt = document.getElementById("text").value;
         textToEncrypt = removeAccents(textToEncrypt);
-        textToEncrypt = textToEncrypt.replace(/a/igm, "ai");
-        textToEncrypt = textToEncrypt.replace(/e/igm, "enter");
-        textToEncrypt = textToEncrypt.replace(/i/igm, "imes");
-        textToEncrypt = textToEncrypt.replace(/o/igm, "ober");
-        textToEncrypt = textToEncrypt.replace(/u/igm, "ufat");
+        textToEncrypt = textToEncrypt.replace(/e/g, "enter");
+        textToEncrypt = textToEncrypt.replace(/i/g, "imes");
+        textToEncrypt = textToEncrypt.replace(/a/g, "ai");
+        textToEncrypt = textToEncrypt.replace(/o/g, "ober");
+        textToEncrypt = textToEncrypt.replace(/u/g, "ufat");
         showText.innerHTML = textToEncrypt.toLowerCase();
 
         //encryptBtn.onclick = aux = 0;
@@ -63,11 +63,11 @@
     function decrypt() {
         textToEncrypt = document.getElementById("text").value;
         textToEncrypt = removeAccents(textToEncrypt);
-        textToEncrypt = textToEncrypt.replace(/aimes/igm, "a");
-        textToEncrypt = textToEncrypt.replace(/enter/igm, "e");
-        textToEncrypt = textToEncrypt.replace(/imes/igm, "i");
-        textToEncrypt = textToEncrypt.replace(/ober/igm, "o");
-        textToEncrypt = textToEncrypt.replace(/ufat/igm, "u");
+        textToEncrypt = textToEncrypt.replace(/enter/g, "e");
+        textToEncrypt = textToEncrypt.replace(/imes/g, "i");
+        textToEncrypt = textToEncrypt.replace(/ai/g, "a");
+        textToEncrypt = textToEncrypt.replace(/ober/g, "o");
+        textToEncrypt = textToEncrypt.replace(/ufat/g, "u");
         showText.innerHTML = textToEncrypt.toLowerCase();
 
         //decryptBtn.onclick = aux = 1;
