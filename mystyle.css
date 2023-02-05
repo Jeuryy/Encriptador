@@ -119,8 +119,9 @@ body {
 .div-show-text {
     float: left;
     width: 30%;
-    height: 35em;
+    height: 28em;
     padding: 0.5em 1em 0.5em 1em;
+    margin-left: 0.5em;
     border-radius: 20px;
     background: radial-gradient(circle at center, #898c90, #b1aaaa);
     box-shadow: 0.1em 0.1em 1em 0.1em #4e0000;
@@ -165,20 +166,21 @@ strong {
 
 footer {
     margin-top: 10em;
-    background-image: url('img/bg.jpg');
+    /*background-image: url('img/bg.jpg');*/
     text-align: center;
     display: inline;
 }
 
-#logo-footer {
+
+/*#logo-footer {
     width: 30%;
     padding: 5em 0 3em 0;
-}
+}*/
 
 .text-footer {
     color: #FFFFFFFF;
     position: relative;
-    bottom: 1em;
+    bottom: 0.3em;
 }
 
 @media screen and (max-width:730px) {
