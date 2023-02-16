@@ -1,12 +1,12 @@
     // Variables
-    var showText = document.getElementById("notfound-text");
-    var copyBtn = document.getElementById("copy");
-    var clearBtn = document.getElementById("clear-content");
-    var notFoundImg = document.getElementById("notfound-img");
-    var encryptBtn = document.getElementById("btn-encrypt");
-    var decryptBtn = document.getElementById("btn-decrypt");
-    var textToEncrypt;
-    var aux;
+    let showText = document.getElementById("notfound-text"),
+        copyBtn = document.getElementById("copy"),
+        clearBtn = document.getElementById("clear-content"),
+        notFoundImg = document.getElementById("notfound-img"),
+        encryptBtn = document.getElementById("btn-encrypt"),
+        decryptBtn = document.getElementById("btn-decrypt"),
+        textToEncrypt;
+
 
 
 
@@ -50,11 +50,7 @@
         showText.innerHTML = textToEncrypt.toLowerCase();
 
 
-        if (textToEncrypt == "") {
-            hideElements();
-        } else {
-            showElements()
-        }
+        (!textToEncrypt) ? hideElements(): showElements();
     }
 
     function decrypt() {
@@ -67,11 +63,7 @@
         textToEncrypt = textToEncrypt.replace(/ufat/g, "u");
         showText.innerHTML = textToEncrypt.toLowerCase();
 
-        if (textToEncrypt == "") {
-            hideElements();
-        } else {
-            showElements()
-        }
+        (!textToEncrypt) ? hideElements(): showElements();
     }
 
     function copyText() {
